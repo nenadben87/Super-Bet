@@ -1,0 +1,161 @@
+
+@media(max-width: 1280px){
+  .column.column-1 {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 1180px){
+  #matches .header-2 .time.sub-header {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+}
+
+@media(max-width: 1024px){
+  .column.column-1 {
+    font-size: 0.8rem;
+  }
+
+  #matches {
+    margin-top: 5rem;
+  }
+
+  .wrapper .my-ticket {
+    position: absolute;
+    top: 11%;
+    right: 3%;
+  }
+
+  #matches .header-1 {
+    width: 90%;
+  }
+
+  #matches .header-2 {
+    width: 90%;
+  }
+
+  #matches .columnes {
+    width: 90%;
+  }
+}
+
+@media(max-width: 912px){
+  #matches .header-2 .time.sub-header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media(max-width: 851px){
+  #matches .header-2 .time.sub-header {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+
+@media(max-width: 820px){
+  #matches .header-2 .time.sub-header {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+
+@media(max-width: 768px){
+  #matches .header-2 .time.sub-header {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media(max-width: 720px){
+  #matches .header-2 .sub-header {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  #matches .header-2 .time.sub-header {
+    font-size: 0.8rem;
+  }
+}
+
+@media(max-width: 667px){
+  #matches .header-2 .time.sub-header {
+    font-size: 0.7rem;
+  }
+
+  .wrapper #matches .columnes .column.column-1 {
+    font-size: 0.7rem;
+  }
+}
+
+@media(max-width: 540px){
+  .wrapper #matches {
+    margin-left: 0rem;
+  }
+
+  .wrapper #matches .header-1 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .wrapper #matches .header-2 {
+    width: 100%;
+  }
+
+  .wrapper #matches .columnes {
+    width: 100%;
+  }
+
+  .wrapper #matches .columnes .column.column-2{
+    font-size: 1rem;
+  }
+
+  .wrapper #matches .header-2  .sub-header{
+    font-size: 0.6rem;
+  }
+
+  .columnes .column.column-1 {
+    font-size: 0.7rem;
+  }
+  
+  .columnes .column.column-3, 
+  .columnes .column.column-4, 
+  .columnes .column.column-5,
+  .columnes .column.column-6, 
+  .columnes .column.column-7 {
+    font-size: 1rem;
+  }
+
+  .my-ticket {
+    margin-top: 1rem;
+  }
+}
+
+@media(max-width: 414px){
+  body nav {
+    width: 120%;
+  }
+
+  .wrapper #matches .header-1 {
+    width: 120%;
+  }
+
+  .wrapper #matches .header-2 {
+    width: 120%;
+  }
+
+  .wrapper #matches .columnes {
+    width: 120%;
+  }
+
+  .wrapper #matches .columnes .column.column-1{
+    font-size: 0.5rem;
+  }
+}
+
+@media(max-width: 360px){
+  .wrapper #matches .columnes .column.column-2{
+    font-size: 0.8rem;
+  }
+}

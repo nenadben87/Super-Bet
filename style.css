@@ -1,0 +1,420 @@
+:root {
+  --primary-color: #478a90;
+  --secondary-color: 	#5ea2a3;
+  --white-color: #faf8f9;
+  --success-color: #add2ca;
+  --grey-color: #aaaaaa;
+  --dark-color: #333;
+  --blue-color: #476690;
+  --ticket-body-color: #c9e3e3;
+  --red-color: #8e161a;
+  --secondary-color-hover: #549192;
+  --red-color-hover: #992d30;
+  --primary-color-hover: #3f7c81;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-bottom: 1px solid var(--grey-color);
+  margin-bottom: 3rem;
+  /* position: relative; */
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  color: var(--white-color);
+}
+
+nav h1 {
+  font-size: 2rem;
+  z-index: 1;
+  padding-top: 0.5rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-div-1,
+.user-div-2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 3rem;
+}
+
+.user-div-1 span {
+  margin-left: 0.5rem;
+}
+
+/* .wrapper {
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+} */
+
+/* Matches Section */
+#matches {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+}
+
+.header-1 {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px 5px 0px 0px;
+  width: 70%;
+}
+
+.world-cup {
+  text-align: center;
+}
+
+.final-result {
+  text-align: left;
+}
+
+.over-under {
+  text-align: left;
+}
+
+.header-2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: var(--success-color);
+  color: var(--white-color);
+  border: 1px solid var(--grey-color);
+  width: 70%;
+}
+
+.sub-header {
+  border: 1px solid var(--grey-color);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+}
+
+.columnes {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 1fr 1fr;
+  color: var(--dark-color);
+  border: 1px solid var(--grey-color);
+  width: 70%;
+}
+
+.column {
+  border-left: 1px solid var(--grey-color); 
+  border-right: 1px solid var(--grey-color); 
+  border-bottom: 1px solid var(--grey-color); 
+  font-size: 1.2rem;
+  text-align: center;
+  /* padding: 0.3rem 1.2rem 0.3rem 1.2rem; */
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.column-2 {
+  text-align: center;
+}
+
+.column-3:hover,
+.column-4:hover,
+.column-5:hover,
+.column-6:hover,
+.column-7:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+/* My Ticket */
+.my-ticket {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+
+.ticket-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  width: 300px;
+  padding: 0.5rem;
+  border-radius: 5px 5px 0px 0px;
+  position: relative;
+}
+
+.ticket-header i {
+  color: var(--white-color);
+  font-size: 1.3rem;
+}
+
+.fa-chevron-down:hover {
+  cursor: pointer;
+}
+
+.fa-chevron-down.active {
+  transform: rotate(180deg);
+}
+
+.games {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--success-color);
+  padding-left: 8px;
+  padding-top: 4px;
+  top: -20%;
+  right: -3%;
+  display: none;
+}
+
+.games.active {
+  display: block;
+}
+
+.ticket-body {
+  background-color: var(--ticket-body-color);
+  border: 1px solid var(--grey-color);
+  padding-top: 0rem;
+  padding-left: 0rem;
+  transition: all 0.3s ease-in-out; 
+  /* height: 0px; */
+  opacity: 0; 
+}
+
+.ticket-body.active {
+  /* height: 201px; */
+  padding-top: 1rem;
+  padding-left: 1rem;
+  opacity: 1;
+}
+
+.match-pick {
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.pick-description {
+  margin-left: 8rem;
+}
+
+.pick-description span {
+  margin-left: 1rem;
+}
+
+.pick-description i {
+  color: var(--red-color);
+}
+
+.pick-description i:hover {
+  cursor: pointer;
+}
+
+.total-bet {
+  margin-bottom: 1rem;
+}
+
+.payment {
+  margin-bottom: 1rem;
+}
+
+.payment input {
+  width: 100px;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+}
+
+.payment input:focus {
+  border: 1px solid var(--secondary-color);
+  outline: none;
+}
+
+.potential-win {
+  margin-bottom: 1.5rem;
+}
+
+.alert {
+  padding-bottom: 0.5rem;
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+.ticket-footer {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 5px 5px;
+  padding-left: 1rem;
+  /* transition: all 0.2s ease-in; */
+  opacity: 0;
+}
+
+.ticket-footer.active {
+  display: flex;
+  opacity: 1;
+}
+
+.ticket-footer button {
+  padding: 0.4rem 0.7rem;
+  border-radius: 3px;
+  border: 1px solid var(--white-color);
+}
+
+.send-ticket {
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.send-ticket:hover {
+  background-color: var(--secondary-color-hover);
+  cursor: pointer;
+}
+
+.clear-matches {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+.my-ticket .ticket-footer .clear-matches:hover {
+  background-color: var(--red-color-hover);
+  cursor: pointer;
+}
+
+.confirm-window.active {
+  position: absolute;
+  background-color: var(--dark-color);
+  opacity: 0.9;
+  top: 0;
+  left:0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  /* height: 100vh; */
+}
+
+.confirm-window {
+  display: none;
+}
+
+.confirm-ticket {
+  background-color: var(--white-color);
+  width: 500px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.confirm-header {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 5px 5px 0px 0px;
+}
+
+.confirm-ticket .confirm-body {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.match-pick-confirm {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--grey-color);
+  padding-bottom: 1rem;
+}
+
+.pick-description-confirm {
+  /* margin-left: 390px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pick-description-confirm span {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 2px;
+}
+
+.total-bet-confirm,
+.payment-confirm,
+.potential-win-confirm {
+  margin-bottom: 1rem;
+}
+
+.confirm-footer {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.confirm-footer button {
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--white-color);
+  border-radius: 3px;
+  color: var(--white-color);
+}
+
+.pay-ticket {
+  background-color: var(--primary-color);
+}
+
+.pay-ticket:hover {
+  background-color: var(--primary-color-hover);
+  cursor: pointer;
+}
+
+.cancel-payment {
+  background-color: var(--red-color);
+}
+
+.cancel-payment:hover {
+  background-color: var(--red-color-hover);
+  cursor: pointer;
+}
