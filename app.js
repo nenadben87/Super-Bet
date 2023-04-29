@@ -231,6 +231,10 @@ function payYourTicket(){
     winSum.textContent = '0.00';
     paymentInput.value = '';
     confirmWindow.classList.remove('active');
+
+    myTicket.style.zIndex = '1';
+    navigation.children[0].style.zIndex = '1';
+    navigation.children[1].style.zIndex = '1';
 }
 
 function cancelYourPayment(){
